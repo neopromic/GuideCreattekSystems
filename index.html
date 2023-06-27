@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Design System</title>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <nav>
+      <div class="">
+        <div class="cards">
+          <section class="card active" data-target="container1">
+            <i class="ph ph-palette"></i>
+            <span>Colors</span>
+          </section>
+          <section class="card" data-target="container2">
+            <i class="ph ph-text-aa"></i>
+            <span>Fonts</span>
+          </section>
+          <section class="card" data-target="container3">
+            <i class="ph ph-images"></i>
+            <span>Assets</span>
+          </section>
+
+          <section class="card" data-target="container4">
+            <i class="ph ph-puzzle-piece"></i>
+            <span>Components</span>
+          </section>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <main class="containers containersActive" id="container1">
+        <h1><i class="ph ph-palette"></i>Colors</h1>
+        <span class="secondarySpan">
+       <i class="ph ph-info"></i> These colors are standard for our web and mobile applications!
+        </span>
+        <p class="textDescription">Colors represent the identity of your project, so we've prepared a usage guide for our
+          beloved colors!</p>
+        <h1>
+          <i class="ph ph-question"></i> How to use
+        </h1>
+        <span class="secondarySpan">
+       <i class="ph ph-info"></i> Veja uma lista de cores que usamos por padrão em projetos
+        </span>
+        <ol>
+          <li>
+            <h3>Erros</h3>
+            <span>Essas cores são usadas para indicar erros ou mensagens de erro em seu aplicativo ou design. O "Container de erro" é a cor de fundo do contêiner que envolve a mensagem de erro, enquanto a "Cor do erro" é a cor do texto da mensagem de erro.</span>
+            <ul>
+              <li><strong>Container de erro:</strong> <code>@color/colorOnErrorContainer</code></li>
+              <li><strong>Cor do erro:</strong> <code>@color/colorOnError</code></li>
+              <li><strong>Container de mensagem de erro:</strong> <code>@color/colorErrorContainer</code></li>
+              <li><strong>Cor do texto de erro:</strong> <code>@color/colorError</code></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Terciário</h3>
+            <span>Essas cores são consideradas secundárias em relação às cores principais do seu design. O "Container terciário" é a cor de fundo do contêiner que usa essa cor, enquanto a "Cor terciária" é a cor principal em si. O "Texto sobre container terciário" é a cor do texto que aparece sobre o contêiner terciário, e o "Texto terciário" é a cor do texto que usa a cor terciária.</span>
+            <ul>
+              <li><strong>Container terciário:</strong> <code>@color/colorTertiaryContainer</code></li>
+              <li><strong>Cor terciária:</strong> <code>@color/colorTertiary</code></li>
+              <li><strong>Texto sobre container terciário:</strong> <code>@color/colorOnTertiaryContainer</code></li>
+              <li><strong>Texto terciário:</strong> <code>@color/colorOnTertiary</code></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Superfície</h3>
+            <span>Essas cores são usadas para elementos de superfície ou fundo em seu aplicativo. "Superfície" é a cor de fundo principal, enquanto "Container da superfície" é a cor de fundo de um contêiner específico. "Texto sobre a superfície" é a cor do texto que aparece sobre a superfície principal, e "Texto sobre a superfície variante" é a cor do texto que aparece sobre uma superfície variante.</span>
+            <ul>
+              <li><strong>Superfície:</strong> <code>@color/colorSurface</code></li>
+              <li><strong>Container da superfície:</strong> <code>@color/colorSurfaceContainer</code></li>
+              <li><strong>Texto sobre a superfície:</strong> <code>@color/colorOnSurface</code></li>
+              <li><strong>Texto sobre a superfície variante:</strong> <code>@color/colorOnSurfaceVariant</code></li>
+              <li><strong>Superfície variante:</strong> <code>@color/colorSurfaceVariant</code></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Secundário</h3>
+            <span>Essas cores são consideradas secundárias em relação às cores principais do seu design. "Secundário" é a cor principal em si, enquanto "Container secundário" é a cor de fundo de um contêiner que usa essa cor. "Texto sobre o container secundário" é a cor do texto que aparece sobre o contêiner secundário, e "Texto secundário" é a cor do texto que usa a cor secundária.</span>
+            <ul>
+              <li><strong>Secundário:</strong> <code>@color/colorSecondary</code></li>
+              <li><strong>Container secundário:</strong> <code>@color/colorSecondaryContainer</code></li>
+              <li><strong>Texto sobre o container secundário:</strong> <code>@color/colorOnSecondaryContainer</code></li>
+              <li><strong>Texto secundário:</strong> <code>@color/colorOnSecondary</code></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Primário</h3>
+            <span>Essas cores são as principais do seu design. "Primário" é a cor principal em si, enquanto "Container primário" é a cor de fundo de um contêiner que usa essa cor. "Texto sobre o container primário" é a cor do texto que aparece sobre o contêiner primário, e "Texto primário" é a cor do texto que usa a cor primária.</span>
+            <ul>
+              <li><strong>Primário:</strong> <code>@color/colorPrimary</code></li>
+              <li><strong>Container primário:</strong> <code>@color/colorPrimaryContainer</code></li>
+              <li><strong>Texto sobre o container primário:</strong> <code>@color/colorOnPrimaryContainer</code></li>
+              <li><strong>Texto primário:</strong> <code>@color/colorOnPrimary</code></li>
+            </ul>
+            <ul>
+              <h3>Cores Violetas</h3>
+              <span>Do mais claro tom ao mais escuro tom de violeta.</span>
+              <li>
+                <strong>Violeta claro (quase branco): <code>--violet-50</code></strong>
+              </li>
+              <li>
+                <strong>Violeta: <code>--violet-100</code></strong>
+              </li>
+              <li>
+                <strong>Violeta: <code>--violet-200</code></strong>
+              </li>
+              <li>
+                <strong>Violeta: <code>--violet-300</code></strong>
+              </li>
+              <li>
+                <strong>Violeta: <code>--violet-400</code></strong>
+              </li>
+              <li>
+                <strong>Violeta: <code>--violet-500</code></strong>
+              </li>
+              <li>
+                <strong>Violeta: <code>--violet-600</code></strong>
+              </li>
+              <li>
+                <strong>Violeta: <code>--violet-700</code></strong>
+              </li>
+              <li>
+                <strong>Violeta: <code>--violet-800</code></strong>
+              </li>
+              <li>
+                <strong>Violeta: <code>--violet-900</code></strong>
+              </li>
+
+              <li>
+                <strong>Violeta (o tom mais escuro): <code>--violet-950</code></strong>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <div class="guide">
+          <div class="guideHeader">
+            <h1>Colors list</h1>
+            <i id="dropdown" class="ph ph-caret-down"></i>
+          </div>
+          <div id="guideView" class="guideContent guideDefault">
+            <p id="colorsText">
+              --violet-50: #f5f3ff;<br>
+              --violet-100: #ede9fe;<br>
+              --violet-200: #ddd6fe;<br>
+              --violet-300: #c4b5fd;<br>
+              --violet-400: #a78bfa;<br>
+              --violet-500: #8b5cf6;<br>
+              --violet-600: #7c3aed;<br>
+              --violet-700: #6d28d9;<br>
+              --violet-800: #5b21b6;<br>
+              --violet-900: #4c1d95;<br>
+              --violet-950: #2e1065;<br>
+              --md_theme_dark_surfaceTintColor: #D0BCFF;<br>
+              --md_theme_dark_onErrorContainer: #F2B8B5;<br>
+              --md_theme_dark_onError: #601410;<br>
+              --md_theme_dark_errorContainer: #8C1D18;<br>--md_theme_dark_onTertiaryContainer: #FFD8E4;<br>
+              --md_theme_dark_onTertiary: #492532;<br>
+              --md_theme_dark_tertiaryContainer: #633B48;<br>
+              --md_theme_dark_tertiary: #EFB8C8;<br>
+              --md_theme_dark_shadow: #000000;<br>
+              --md_theme_dark_error: #F2B8B5;<br>
+              --md_theme_dark_outline: #938F99;<br>
+              --md_theme_dark_onBackground: #E6E1E5;<br>
+              --md_theme_dark_background: #1C1B1F;<br>
+              --md_theme_dark_inverseOnSurface: #313033;<br>
+              --md_theme_dark_inverseSurface: #E6E1E5;<br>
+              --md_theme_dark_onSurfaceVariant: #CAC4D0;<br>
+              --md_theme_dark_onSurface: #E6E1E5;<br>
+              --md_theme_dark_surfaceVariant: #49454F;<br>
+              --md_theme_dark_surface: #1C1B1F;<br>
+              --md_theme_dark_onSecondaryContainer: #E8DEF8;<br>
+              --md_theme_dark_onSecondary: #332D41;<br>
+              --md_theme_dark_secondaryContainer: #4A4458;<br>
+              --md_theme_dark_secondary: #CCC2DC;<br>
+              --md_theme_dark_inversePrimary: #6750A4;<br>
+              --md_theme_dark_onPrimaryContainer: #EADDFF;<br>
+              --md_theme_dark_onPrimary: #381E72;<br>
+              --md_theme_dark_primaryContainer: #4F378B;<br>
+              --md_theme_dark_primary: #D0BCFF;
+            </p>
+          </div>
+        </div>
+
+        <section>
+
+        </section>
+      </main>
+
+      <main class="containers" id="container2">
+        <h1><i class="ph ph-text-aa"></i>Fonts</h1>
+        <span class="secondarySpan">Generally used fonts are Inter &amp; Roboto-Flex.</span>
+        <section>
+          <p class="textDescription">Fonts are of great importance to maintain the elegance and sophistication of a
+            project.</p>
+        </section>
+      </main>
+      <main class="containers" id="container3">
+        <h1><i class="ph ph-images"></i>Assets</h1>
+        <span class="secondarySpan">Assets are files used throughout projects.</span>
+      </main>
+      <main class="containers" id="container4">
+        <h1><i class="ph ph-puzzle-piece"></i>Components</h1>
+        <span class="secondarySpan">Components is only for web projects.</span>
+      </main>
+    </div>
+    <footer class="w-full flex items-center justify-center p-3">
+      <p class="flex items-center gap-2">With <i class="ph-fill ph-heart text-rose-500"></i> by Creattek.</p>
+    </footer>
+
+
+  </body>
+
+</html>
