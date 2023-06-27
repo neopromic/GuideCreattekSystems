@@ -193,6 +193,9 @@ ol {
   border: 1px solid var(--md_theme_dark_outline);
   width: 100%;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 ol h3 {
   margin: 8px;
